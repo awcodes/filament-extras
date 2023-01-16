@@ -47,8 +47,7 @@
         "pint": "vendor/bin/pint",
         "test:pest": "vendor/bin/pest --parallel",
         "test": [
-            "@test:pest",
-            "@test:phpstan"
+            "@test:pest"
         ]
     },
     "config": {
@@ -62,7 +61,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Awcodes\\FilamentExtras\\FilamentExtrasServiceProvider"
+                "Awcodes\\FilamentExtras\\ExtrasServiceProvider"
             ],
             "aliases": {
                 "FilamentExtras": "Awcodes\\FilamentExtras\\Facades\\FilamentExtras"

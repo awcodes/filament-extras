@@ -1,1 +1,6 @@
 @tailwind utilities;
+
+.dark input[type="date"],
+.dark input[type="datetime-local"] {
+    color-scheme: dark;
+}

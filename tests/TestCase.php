@@ -6,7 +6,7 @@ use Filament\FilamentServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Awcodes\FilamentExtras\FilamentExtrasServiceProvider;
+use Awcodes\FilamentExtras\ExtrasServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -24,7 +24,7 @@ class TestCase extends Orchestra
         return [
             LivewireServiceProvider::class,
             FilamentServiceProvider::class,
-            FilamentExtrasServiceProvider::class,
+            ExtrasServiceProvider::class,
         ];
     }
 
