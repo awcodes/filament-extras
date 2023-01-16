@@ -44,8 +44,8 @@ public static function form(Form $form): Form
     return FixedWidthSidebar::make()
         ->mainSchema([...])
         ->sidebarSchema([...])
-        ->sidebarWidth(string | int $width = '20rem')
-        ->breakpoint(string | int $breakpoint = 'md')
+        ->sidebarWidth(string|int $width = '20rem')
+        ->breakpoint(string|int $breakpoint = 'md')
 }
 ```
 
@@ -63,11 +63,11 @@ use Awcodes\FilamentExtras\Forms\Components\DateInput;
 
 DateInput::make(string $fieldname)
     ->label('Publish Date')
-    ->withoutTime(bool | Closure $condition = true)
-    ->withoutSeconds(bool | Closure $condition = true)
-    ->minDate(DateTime | string | Closure | null $date)
-    ->maxDate(DateTime | string | Closure | null $date)
-    ->timezone(string | Closure | null $timezone)
+    ->withoutTime(bool|Closure $condition = true)
+    ->withoutSeconds(bool|Closure $condition = true)
+    ->minDate(DateTime|string|Closure|null $date)
+    ->maxDate(DateTime|string|Closure|null $date)
+    ->timezone(string|Closure|null $timezone)
 ```
 
 ### **Password Generator**
@@ -120,7 +120,7 @@ Filament theme colors, 'primary', 'danger', etc or with a HEX value, '#bada55'.
 ```php
 use Awcodes\FilamentBundle\Forms\Components\Heading;
 
-Heading::make(string | int $level = 2)
+Heading::make(string|int $level = 2)
     ->content('This is a test')
     ->color(string $color)
 ```
