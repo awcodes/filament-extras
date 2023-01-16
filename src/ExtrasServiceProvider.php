@@ -16,6 +16,7 @@ class ExtrasServiceProvider extends PluginServiceProvider
     public function configurePackage(Package $package): void
     {
         $package->name(static::$name)
+            ->hasAssets()
             ->hasViews()
             ->hasTranslations();
     }
