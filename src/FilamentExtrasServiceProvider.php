@@ -1,13 +1,13 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Awcodes\FilamentExtras;
 
 use Filament\PluginServiceProvider;
 use Spatie\LaravelPackageTools\Package;
 
-class SkeletonServiceProvider extends PluginServiceProvider
+class FilamentExtrasServiceProvider extends PluginServiceProvider
 {
-    public static string $name = 'skeleton';
+    public static string $name = 'filament-extras';
 
     protected array $resources = [
         // CustomResource::class,
@@ -22,15 +22,15 @@ class SkeletonServiceProvider extends PluginServiceProvider
     ];
 
     protected array $styles = [
-        'plugin-skeleton' => __DIR__.'/../resources/dist/skeleton.css',
+        'plugin-filament-extras' => __DIR__.'/../resources/dist/filament-extras.css',
     ];
 
     protected array $scripts = [
-        'plugin-skeleton' => __DIR__.'/../resources/dist/skeleton.js',
+        'plugin-filament-extras' => __DIR__.'/../resources/dist/filament-extras.js',
     ];
 
     // protected array $beforeCoreScripts = [
-    //     'plugin-skeleton' => __DIR__ . '/../resources/dist/skeleton.js',
+    //     'plugin-filament-extras' => __DIR__ . '/../resources/dist/filament-extras.js',
     // ];
 
     public function configurePackage(Package $package): void
