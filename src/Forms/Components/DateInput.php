@@ -41,8 +41,8 @@ class DateInput extends Field
             $state = Carbon::parse($state);
 
             if ($this->hasTime()) {
-                // $state = $state->toDateTimeLocalString();
                 $state->setTimezone($component->getTimezone());
+                $state = $state->format($component->getFormat());
             } else {
                 $state = $state->format('Y-m-d');
             }
