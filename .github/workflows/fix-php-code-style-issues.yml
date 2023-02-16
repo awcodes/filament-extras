@@ -1,6 +1,9 @@
-name: Fix PHP code style issues
+name: Fix PHP code styling
 
-on: [push]
+on:
+  pull_request:
+    branches: [ main ]
+    types: [ closed ]
 
 jobs:
   php-code-styling:
