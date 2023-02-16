@@ -11,9 +11,9 @@ class FixedWidthSidebar extends Component
 
     protected array $sidebarSchema = [];
 
-    protected string | int $sidebarWidth = '20rem';
+    protected string|int $sidebarWidth = '20rem';
 
-    protected string | int $breakpoint = 'md';
+    protected string|int $breakpoint = 'md';
 
     protected string $view = 'filament-extras::forms.components.fixed-width-sidebar';
 
@@ -45,14 +45,14 @@ class FixedWidthSidebar extends Component
         return $this;
     }
 
-    public function sidebarWidth(string | int $width): static
+    public function sidebarWidth(string|int $width): static
     {
         $this->sidebarWidth = $width;
 
         return $this;
     }
 
-    public function breakpoint(string | int $breakpoint = 'md'): static
+    public function breakpoint(string|int $breakpoint = 'md'): static
     {
         $this->breakpoint = $breakpoint;
 
