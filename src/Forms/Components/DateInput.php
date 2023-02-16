@@ -17,17 +17,17 @@ class DateInput extends Field
 
     protected string $view = 'filament-extras::forms.components.date-input';
 
-    protected bool | Closure $isWithoutTime = false;
+    protected bool|Closure $isWithoutTime = false;
 
-    protected bool | Closure $isWithoutSeconds = false;
+    protected bool|Closure $isWithoutSeconds = false;
 
-    protected string | Closure | null $format = null;
+    protected string|Closure|null $format = null;
 
-    protected DateTime | string | Closure | null $maxDate = null;
+    protected DateTime|string|Closure|null $maxDate = null;
 
-    protected DateTime | string | Closure | null $minDate = null;
+    protected DateTime|string|Closure|null $minDate = null;
 
-    protected string | Closure | null $timezone = null;
+    protected string|Closure|null $timezone = null;
 
     protected function setUp(): void
     {
@@ -68,14 +68,14 @@ class DateInput extends Field
         $this->rule('date', static fn (DateInput $component): bool => ! $component->hasTime());
     }
 
-    public function timezone(string | Closure | null $timezone): static
+    public function timezone(string|Closure|null $timezone): static
     {
         $this->timezone = $timezone;
 
         return $this;
     }
 
-    public function maxDate(DateTime | string | Closure | null $date): static
+    public function maxDate(DateTime|string|Closure|null $date): static
     {
         $this->maxDate = $date;
 
@@ -92,7 +92,7 @@ class DateInput extends Field
         return $this;
     }
 
-    public function minDate(DateTime | string | Closure | null $date): static
+    public function minDate(DateTime|string|Closure|null $date): static
     {
         $this->minDate = $date;
 
@@ -109,7 +109,7 @@ class DateInput extends Field
         return $this;
     }
 
-    public function withoutTime(bool | Closure $condition = true): static
+    public function withoutTime(bool|Closure $condition = true): static
     {
         $this->isWithoutTime = $condition;
         $this->isWithoutSeconds = true;
@@ -117,7 +117,7 @@ class DateInput extends Field
         return $this;
     }
 
-    public function withoutSeconds(bool | Closure $condition = true): static
+    public function withoutSeconds(bool|Closure $condition = true): static
     {
         $this->isWithoutSeconds = $condition;
 

@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'button_label' => 'Generate Password'
+    'button_label' => 'Generate Password',
 ];
