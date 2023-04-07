@@ -20,7 +20,7 @@
 >
 
     <div x-data="{
-        state: $wire.entangle('{{ $statePath }}'),
+        state: $wire.entangle('{{ $statePath }}', {defer: true}),
         generatePassword: function() {
             let chars = '{{ $getChars() }}';
             let password = '';
